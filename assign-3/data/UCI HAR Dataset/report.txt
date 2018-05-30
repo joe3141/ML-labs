@@ -1,0 +1,60 @@
+Default SVM:
+             precision    recall  f1-score   support
+
+          1       0.94      0.99      0.97       496
+          2       0.94      0.96      0.95       471
+          3       0.98      0.90      0.94       420
+          4       0.91      0.86      0.88       491
+          5       0.88      0.92      0.90       532
+          6       1.00      1.00      1.00       537
+
+avg / total       0.94      0.94      0.94      2947
+
+
+SVM after randomized search:
+SVC(C=1000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=0.0001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+             precision    recall  f1-score   support
+
+          1       0.94      0.99      0.97       496
+          2       0.97      0.95      0.96       471
+          3       0.99      0.97      0.98       420
+          4       0.97      0.89      0.93       491
+          5       0.91      0.97      0.94       532
+          6       1.00      1.00      1.00       537
+
+avg / total       0.96      0.96      0.96      2947
+
+
+
+NN with one hidden layer comprised of 50 nodes:
+             precision    recall  f1-score   support
+
+        1.0       0.94      0.99      0.97       496
+        2.0       0.97      0.95      0.96       471
+        3.0       0.99      0.97      0.98       420
+        4.0       0.97      0.89      0.93       491
+        5.0       0.91      0.97      0.94       532
+        6.0       1.00      1.00      1.00       537
+
+avg / total       0.96      0.96      0.96      2947
+
+MLPClassifier(activation='relu', alpha=0.01, batch_size=128, beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=10, learning_rate='invscaling',
+       learning_rate_init=0.001, max_iter=5000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=1, shuffle=True,
+       solver='adam', tol=0.0001, validation_fraction=0.1, verbose=False,
+       warm_start=False)
+             precision    recall  f1-score   support
+
+        1.0       0.93      0.99      0.96       496
+        2.0       0.94      0.94      0.94       471
+        3.0       0.99      0.92      0.95       420
+        4.0       0.95      0.88      0.91       491
+        5.0       0.89      0.95      0.92       532
+        6.0       1.00      0.99      1.00       537
+
+avg / total       0.95      0.95      0.95      2947
